@@ -17,4 +17,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Typed Navigation Runtime Crash"
+
 include(":app")
+include(":feature1")

@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -43,7 +45,14 @@ kotlin {
 }
 
 dependencies {
+    implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.compose.runtime)
     implementation(libs.androidx.core)
+    implementation(libs.androidx.navigation.compose)
     implementation(libs.google.material)
+    implementation(libs.kotlinx.serialization.core)
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(project(":feature1"))
 }
