@@ -14,10 +14,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.sindrenm.repros.typednavigationruntimecrash.feature1.FeatureGraphRoute
-import com.sindrenm.repros.typednavigationruntimecrash.feature1.FeatureHomeRoute
 import com.sindrenm.repros.typednavigationruntimecrash.feature1.featureNavGraph
-import kotlinx.serialization.Serializable
+import com.sindrenm.repros.typednavigationruntimecrash.routes.FeatureHomeRoute
+import com.sindrenm.repros.typednavigationruntimecrash.routes.HomeRoute
 
 @Composable
 fun MainScreen(modifier: Modifier = Modifier) {
@@ -29,9 +28,6 @@ fun MainScreen(modifier: Modifier = Modifier) {
         featureNavGraph()
     }
 }
-
-@Serializable
-data object HomeRoute
 
 private fun NavGraphBuilder.homeScreen(navController: NavHostController) {
     composable<HomeRoute> {

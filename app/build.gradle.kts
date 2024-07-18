@@ -56,4 +56,5 @@ dependencies {
     implementation(libs.kotlinx.serialization.core)
     implementation(platform(libs.androidx.compose.bom))
     implementation(project(":feature1"))
+    implementation(project(":routes"))
 }

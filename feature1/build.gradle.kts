@@ -24,4 +24,5 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.kotlinx.serialization.core)
     implementation(platform(libs.androidx.compose.bom))
+    implementation(project(":routes"))
 }

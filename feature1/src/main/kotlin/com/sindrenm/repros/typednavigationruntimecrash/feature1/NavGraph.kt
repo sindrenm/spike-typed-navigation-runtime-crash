@@ -8,13 +8,9 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
+import com.sindrenm.repros.typednavigationruntimecrash.routes.FeatureGraphRoute
+import com.sindrenm.repros.typednavigationruntimecrash.routes.FeatureHomeRoute
 import kotlinx.serialization.Serializable
-
-@Serializable
-data object FeatureGraphRoute
-
-@Serializable
-data object FeatureHomeRoute
 
 fun NavGraphBuilder.featureNavGraph() {
     navigation<FeatureGraphRoute>(startDestination = FeatureHomeRoute) {
